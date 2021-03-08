@@ -10,7 +10,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     private EditText editPrecoAlcool, editPrecoGasolina;
-    private TextView textResultado;
+    public TextView textResultado;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +19,9 @@ public class MainActivity extends AppCompatActivity {
 
         editPrecoAlcool = findViewById(R.id.editPrecoAlcool);
         editPrecoGasolina = findViewById(R.id.editPrecoGasolina);
+        textResultado = findViewById(R.id.textResultado);
     }
+
 
     public void calcular(View view) {
 
@@ -37,11 +39,9 @@ public class MainActivity extends AppCompatActivity {
             else {
                 textResultado.setText("Melhor utilizar o Álcool");
             }
-
         }
         else {
             textResultado.setText("Primeiro preencha os preços");
-
         }
     }
 
