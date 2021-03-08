@@ -35,12 +35,12 @@ public class MainActivity extends AppCompatActivity {
                 textResultado.setText("Melhor utilizar a Gasolina ");
             }
             else {
-                textResultado.setText("Primeiro preencha os preços");
+                textResultado.setText("Melhor utilizar o Álcool");
             }
 
         }
         else {
-            textResultado.setText("Melhor utilizar o Álcool ");
+            textResultado.setText("Primeiro preencha os preços");
 
         }
     }
